@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 header{
-
+    position: relative; /* Allows z-index to work */
+    z-index: 10; /* Higher than slider */
+    box-shadow: rgb(220, 220, 220) 0px 3px 6px;
 }
 header .top-ad{
     border: 1px solid black;
@@ -126,5 +128,14 @@ nav .cat-nav{
     font-size: 0.8rem;
 }
 .home-slider{
-    height: 200vh;
+    position: relative;
+    z-index: 1; /* Lower than header */
+}
+.home-slider img{
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* Smooth transition of 1 second */
+}
+.home-slider img.active {
+    opacity: 1; /* Fully visible when active */
 }
