@@ -15,16 +15,21 @@ header .top-ad{
     font-size: 14px;
     background-color: #F04438;
     color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.top-ad span:hover{
+    text-decoration: underline;
 }
 header nav{
     border: 1px solid black;
-    padding: 7px 107px;
 }
 nav .user-nav{
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 7px 107px;
 }
 .logo-search{
     border: 1px solid black;
@@ -98,7 +103,28 @@ nav .user-nav{
 }
 .actions span{
     font-size: 14px;
+    color: #505050;
 }
 nav .cat-nav{
     border: 1px solid black;
+    padding: 7px 107px;
+}
+.cat-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+.cat-nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.cat-nav ul li a{
+    text-decoration: none;
+    color: #5C5C5C;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.home-slider{
+    height: 200vh;
 }
